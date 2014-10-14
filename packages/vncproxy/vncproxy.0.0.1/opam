@@ -7,4 +7,8 @@ build: [
 remove: [
   ["make" "BINDIR=%{bin}%" "uninstall"]
 ]
-depends: ["obuild" "xen-api-client" "cmdliner"]
+depends: [
+  "obuild" {>= "0.1.1" }
+  "xen-api-client" {>= "0.9.7" }
+  "cmdliner"
+]
